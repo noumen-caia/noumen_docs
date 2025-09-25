@@ -16,11 +16,26 @@ nav:
   - Главная: index.md
   - Руководство пользователя: user_guide.md
   - Руководство разработчика: developer_guide.md
-  - Разработка расширений:
+  - Extension API:
       - Что такое расширение?: extension/index.md
-      - Начало работы: extension/get-started/your-first-extension.md
-      - Анатомия: extension/get-started/extension-anatomy.md
-      - Пример Команды: extension/guides/command.md
+      - Ваше первое расширение: extension/get-started/your-first-extension.md
+      - Анатомия расширения: extension/get-started/extension-anatomy.md
+      - Возможности SDK: extension/capabilities.md
+      - Команда: extension/guides/command.md
+      - Конфигурация: extension/guides/configuration.md
+      - Файловая система: extension/guides/fs.md
+      - Привязки клавиш: extension/guides/keybinding.md
+      - Редактор нод: extension/guides/node-editor.md
+      - Ноды: extension/guides/nodes.md
+      - Нотация: extension/guides/notation.md
+      - Уведомления: extension/guides/notifications.md
+      - QuickInput: extension/guides/quick-input.md
+      - Statusbar: extension/guides/statusbar.md
+      - Тема: extension/guides/theme.md
+      - Contribution Points: extension/references/contribution-points.md
+      - Манифест расширения: extension/references/extension-manifest.md
+      - SDK API: extension/references/sdk.md
+      - Тестирование и публикация: extension/testing-and-publish.md
   - Справочник нод:
       - Список: nodes/index.md
 
