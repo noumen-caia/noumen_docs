@@ -1,0 +1,83 @@
+site_name: CodeFlowAI
+site_description: Документация по системе CodeFlowAI для создания рабочих процессов
+site_author: CodeFlowAI Team
+site_url: https://noumen.dev/
+
+# Простая и чистая тема
+theme:
+  name: shadcn
+  language: ru
+  icon: logo.svg
+  favicon: favicon.svg
+  custom_dir: overrides
+
+# Навигация
+nav:
+  - Главная: index.md
+  - Руководство пользователя: user_guide.md
+  - Руководство разработчика: developer_guide.md
+  - Справочник нод:
+      - Обзор: nodes/index.md
+      - Основные ноды:
+          - HTTP Request: nodes/HTTPRequestNode.md
+          - JSON Data: nodes/JSONDataNode.md
+          - DateTime: nodes/DateTimeNode.md
+      - Ноды управления потоком:
+          - If: nodes/IfNode.md
+          - Switch: nodes/SwitchNode.md
+          - ForEach: nodes/ForEachNode.md
+          - DoWhile: nodes/DoWhileNode.md
+      - Ноды обработки данных:
+          - Filter: nodes/FilterNode.md
+          - Aggregation: nodes/AggregationNode.md
+          - Merge: nodes/MergeNode.md
+          - Sort: nodes/SortNode.md
+          - Matrix: nodes/MatrixNode.md
+          - Replace: nodes/ReplaceNode.md
+          - Split Out: nodes/SplitOutNode.md
+          - Concatenate: nodes/ConcatenateNode.md
+          - Edit Field: nodes/EditFieldNode.md
+          - Extractor: nodes/ExtractorNode.md
+          - Validate: nodes/ValidateNode.md
+      - Ноды интеграции:
+          - GitLab: nodes/GitLabNode.md
+          - CKAN: nodes/CKANNode.md
+          - Ollama: nodes/OllamaNode.md
+          - Redis: nodes/RedisNode.md
+          - S3/MinIO: nodes/S3_MINIO.md
+          - SQL Query Builder: nodes/SQLQueryBuilderNode.md
+      - Ноды AI и ML:
+          - Prompt: nodes/PromptNode.md
+          - PG Vector: nodes/PGVectorNode.md
+      - Ноды утилиты:
+          - Sleep: nodes/SleepNode.md
+          - Wait: nodes/WaitNode.md
+          - Email: nodes/EmailNode.md
+          - RSS Feed: nodes/RssFeedReadNode.md
+      - Ноды предварительного просмотра:
+          - Chart Preview: nodes/ChartPreviewNode.md
+          - Table Preview: nodes/TablePreviewNode.md
+      - Тестовые ноды:
+          - Test Aggregation: nodes/Test_Aggregation.md
+          - Test Extractor: nodes/Test_ExtractorNode.md
+          - Simple2Composite: nodes/Simple2Composite.md
+
+# Простые расширения Markdown
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - codehilite
+  - fenced_code
+
+# Простые стили для двухколоночной структуры
+extra_css:
+  - stylesheets/extra.css
+
+# Убираем JavaScript для простоты
+# extra_javascript:
+#   - javascripts/mathjax.js
+
+# Настройки для разработки
+dev_addr: 127.0.0.1:8000
