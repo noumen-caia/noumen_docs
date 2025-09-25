@@ -1,0 +1,41 @@
+/* Простые стили для двухколоночной структуры */
+
+/* Двухколоночная структура */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Адаптивность для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .column {
+    gap: 1rem;
+  }
+}
+
+/* Стилизация заголовков в колонках */
+.column h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Стилизация параграфов в колонках */
+.column p {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
